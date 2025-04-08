@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    background: linear-gradient(to bottom, #2e3b45, #415a6b, #5a7383);
+    background-attachment: fixed;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow-x: hidden;
+  }
+  
+  /* Navigation Bar */
+  nav {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 12px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    backdrop-filter: blur(8px);
+    z-index: 1000;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f0a500;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+    padding: 8px 12px;
+  }
+  
+  nav ul li a:hover,
+  nav ul li a.active {
+    color: #ffcc00;
+    background: rgba(255, 204, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  /* About Section */
+  #about {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    padding: 100px 50px 0;
+    text-align: left;
+    flex-wrap: wrap;
+  }
+  
+  .about-container {
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInLeft 1.5s ease forwards;
+  }
+  
+  /* Image Styling */
+  .image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: popIn 1.5s ease-out 0.5s forwards;
+    margin-bottom: 30px;
+  }
+  
+  .image-container img {
+    width: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+  }
+  
+  
+  /* Highlight Text */
+  .highlight {
+    color: #f0a500;
+    font-weight: bold;
+  }
+  
+  /* Button */
+  .btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #ff9f43, #ff6f61);
+    color: #ffffff;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    box-shadow: 0px 4px 10px rgba(255, 111, 97, 0.5);
+    transition: background 0.3s, box-shadow 0.3s;
+    transform: scale(0.9);
+  }
+  
+  .btn:hover {
+    background-color: #ffcc00;
+    box-shadow: 0 0 12px #ffcc00;
+  }
+  
+  /* Animations */
+  @keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+  }
+  
+  @keyframes popIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    #about {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+    }
+  
+    .image-container {
+        margin-bottom: 20px;
+    }
+  
+    .image-container img {
+        width: 260px;
+    }
+  
+    .about-container {
+        padding: 0 20px;
+    }
+  
+    .btn {
+        font-size: 16px;
+        padding: 10px 22px;
+    }
+  }
+  
