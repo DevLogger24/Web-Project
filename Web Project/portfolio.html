@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="Assets/CSS/portfolio.css" />
+  <script src="Assets/JavaScript/script.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo">Nemo.</a>
+    <i class="bx bx-menu" id="menu-icon"></i>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="story.html">My Story</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="portfolio active">
+    <h1 class="section-title">Latest <span>Projects</span></h1>
+
+    <!-- Filter Buttons -->
+    <div class="portfolio-filters">
+      <button data-filter="all" class="active">All</button>
+      <button data-filter="web">Web</button>
+      <button data-filter="uiux">UI/UX</button>
+      <button data-filter="mobile">Mobile</button>
+      <button data-filter="dashboard">Dashboard</button>
+      <button data-filter="blog">Blog</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-container">
+      <div class="portfolio-box" data-category="web">
+        <img src="Project Images/portfolio1.jpg" alt="Construction Web App">
+            <div class="portfolio-layer">
+                <h4>Construction Web App</h4>
+                <p>Built a fully responsive construction app with services, user login, blogs, and construction management.</p>
+          <a href="https://devlogger24.github.io/Construction_X/"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box" data-category="web">
+        <img src="Project Images/portfolio2.jpg" alt="Portfolio Website" loading="lazy" />
+        <div class="portfolio-layer">
+          <h4>Portfolio Website</h4>
+          <p>Modern, animated personal site to showcase Nemo's design and development skills.</p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box" data-category="uiux">
+        <img src="Project Images/portfolio3.jpg" alt="UI Kit Design" loading="lazy" />
+        <div class="portfolio-layer">
+          <h4>UI Kit Design</h4>
+          <p>Designed a clean and scalable UI kit in Figma for startups and SaaS platforms.</p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box" data-category="mobile">
+        <img src="Project Images/portfolio4.jpg" alt="Fitness App UI" loading="lazy" />
+        <div class="portfolio-layer">
+          <h4>Fitness App UI</h4>
+          <p>Crafted a mobile-first UI for a fitness tracking app with charts and analytics.</p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box" data-category="dashboard">
+        <img src="Project Images/portfolio5.jpg" alt="Marketing Dashboard" loading="lazy" />
+        <div class="portfolio-layer">
+          <h4>Marketing Dashboard</h4>
+          <p>Interactive dashboard to visualize campaigns, engagement stats, and SEO rankings.</p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+
+      <div class="portfolio-box" data-category="blog">
+        <img src="Project Images/portfolio6.jpg" alt="Blog Platform" loading="lazy" />
+        <div class="portfolio-layer">
+          <h4>Blog Platform</h4>
+          <p>Lightweight and fast-loading blog built using JAMstack and Markdown support.</p>
+          <a href="#"><i class="bx bx-link-external"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

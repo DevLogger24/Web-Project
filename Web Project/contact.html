@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Assets/CSS/contact.css">
+    <script src="Assets/JavaScript/script.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">Nemo.</a>
+        <i class="bx bx-menu" id="menu-icon"></i>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="story.html">My Story</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="contact active">
+        <h1 class="section-title">Get in <span>Touch</span></h1>
+
+        <!-- Availability -->
+        <div class="availability-status">
+            <p>Currently <span class="status available" id="availability">Available</span> for Work</p>
+        </div>
+    
+
+        <!-- Booking Form -->
+        <form class="booking-form">
+            <h2>Book a Consultation</h2>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Project Type (e.g. Web Design)" required>
+            <input type="date" required>
+            <textarea rows="4" placeholder="Describe your project..." required></textarea>
+            <button type="submit">Request Booking</button>
+        </form>
+
+        <!-- Social Links -->
+        <div class="contact-social">
+            <a href="#"><i class='bx bxl-github'></i></a>
+            <a href="#"><i class='bx bxl-linkedin'></i></a>
+            <a href="#"><i class='bx bxl-discord-alt'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const availabilityElement = document.getElementById('availability');
+            const isAvailable = true; // Change this dynamically as needed
+
+            if (!isAvailable) {
+                availabilityElement.textContent = 'Not Available';
+                availabilityElement.classList.remove('available');
+                availabilityElement.classList.add('busy');
+            }
+        });
+    </script>
+
+</body>
+</html>
