@@ -232,6 +232,11 @@ section.active {
     margin-top: 4rem;
 }
 
+.contact-social.inside-form {
+    margin-bottom: 2rem;
+    justify-content: center;
+}
+
 .contact-social a {
     font-size: 3rem;
     color: var(--white-color);
